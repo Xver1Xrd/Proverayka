@@ -1,0 +1,84 @@
+name: Тест
+timeLimit: 30
+passingScore: 30
+questions:
+  - question: 2+2
+    weight: 5
+    questionType: "text"
+    answers:
+      - isTrue: true
+        answer: "4"
+        answerType: "text"
+      - isTrue: false
+        answer: "5"
+        answerType: "text"
+      - isTrue: false
+        answer: "22"
+        answerType: "text"
+  - question: Пример работы с текстом (Фрукты)
+    weight: 5
+    questionType: "text"
+    answers:
+      - isTrue: true
+        answer: Банан
+        answerType: "text"
+      - isTrue: true
+        answer: Яблоко
+        answerType: "text"
+      - isTrue: false
+        answer: Малина
+        answerType: "text"
+  - question: Пример работы с изображением 2 (Что лишнее)
+    weight: 5
+    path: img0.jpg
+    questionType: "image"
+    answers:
+      - isTrue: false
+        path: img1.jpg
+        answerType: "image"
+      - isTrue: false
+        path: img2.jpg
+        answerType: "image"
+      - isTrue: true
+        path: img3.jpg
+        answerType: "image"
+  - question: Пример работы с видео (Что упало на бабочку)
+    weight: 10
+    path: video.mp4
+    questionType: "video"
+    answers:
+      - isTrue: true
+        answer: "Яблоко"
+        answerType: "text"
+      - isTrue: false
+        answer: "Банан"
+        answerType: "text"
+      - isTrue: false
+        path: img1.jpg
+        answerType: "image"
+  - question: Пример работы с аудио (Что в ответе)
+    weight: 10
+    path: audio.mp3
+    questionType: "audio"
+    answers:
+      - isTrue: false
+        path: 7.mp3
+        answerType: "audio"
+      - isTrue: true
+        path: image4.jpg
+        answerType: "image"
+      - isTrue: false
+        answer: "22"
+        answerType: "text"
+  - question: Пример работы с пользовательским вводом (Висит груша нельзя скушать.)
+    weight: 15
+    questionType: "text"
+    answers:
+      - isTrue: true
+        answer: лампочка
+        answerType: "input"
+description: Пример построения тестовых заданий
+version:
+  date: 18.12.22
+  info: main
+  v: 0.1.2
